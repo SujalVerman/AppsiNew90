@@ -1,0 +1,143 @@
+/* NAVBAR */
+#template-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(to bottom right, #0f1116, #1a1d23);
+    position: relative;
+  }
+  
+  #back-ground{
+    height: 100vh;
+    background: rgb(210,236,255);
+    background: linear-gradient(180deg, rgba(210,236,255,1) 0%, rgba(249,252,255,1) 100%, rgba(252,252,252,1) 100%);
+  }
+
+  #logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #nav-links {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    background-color: #1f232a;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+  }
+  
+  #nav-slider {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    background-color: #3b3f47;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    z-index: 0;
+  }
+  
+  .nav-button {
+    position: relative;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+    font-size: 0.95rem;
+  }
+  
+  .nav-button:hover {
+    color: #22d3ee;
+  }
+  
+  .nav-button .icon {
+    font-size: 1rem;
+    display: flex;
+  }
+  
+  /* Cart and User Icons */
+  #nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #cart-icon, #user-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #1f232a;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  #user-icon {
+    background-color: #22d3ee;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* TEMPLATE GRID */
+  #template-grid {
+    padding: 2rem;
+  }
+  
+  #back-button {
+    color: #22d3ee;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-top: 6%;
+  }
+  
+  #grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3%;
+  }
+  
+  #template-card {
+    background-color: #fafafa;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  #template-card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  
+  #template-image {
+    height: 120px;
+    background: linear-gradient(to top right, #edffff, #3b82f6);
+    opacity: 0.3;
+  }
+  
+  #template-info {
+    padding: 1rem;
+  }
+  
+  #template-title {
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+  }
+  
+  #template-source {
+    color: #000000;
+  }
+  

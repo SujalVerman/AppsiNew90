@@ -1,0 +1,278 @@
+.topbar {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 8px;
+  background-color: white;
+  font-size: large;
+  position:sticky ;
+  top: 0;
+  z-index: 1000;
+ 
+}
+
+.top-menu {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  left: 60px;
+  margin-bottom: -10px;
+}
+
+.bottom-toolbar {
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-label {
+  white-space: nowrap;
+}
+
+.page-dropdown {
+  padding: 2px 6px;
+  height: 22px;
+  font-size: 13px;
+  border: none;
+}
+
+.icon-box {
+  border: 1px solid #ccc;
+  width: 26px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.icon-box-2{
+  margin-left: 5px;
+}
+
+.icon-box.selected {
+  background-color: #e4eeff;
+  border-color: #7aa7ff;
+}
+
+.divider {
+  height: 36px;
+  width: 1px;
+  background-color: #b2aaaa;
+  margin: 0 5px;
+}
+
+.right-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upgrade {
+  color: purple;
+  cursor: pointer;
+  position: relative;
+}
+
+.save {
+  cursor: pointer;
+}
+
+.icon-git{
+  position: relative;
+  left: 5px;
+}
+
+.div-1{
+  position: relative;
+  left: 5px;
+}
+
+.icon {
+  margin-right: 5px;
+  margin-left: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.arrow {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.arrow-key{
+  background: none;
+  border: none;
+}
+
+.zoom {
+  font-size: 13px;
+}
+
+.studio-left-sidebar {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 60px;
+  height: calc(100vh - 85px);
+  background: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  /* Soft outer shadow for sidebar */
+  box-shadow:
+    4px 4px 10px rgba(0, 0, 0, 0.1),
+    -4px -4px 10px rgba(255, 255, 255, 0.6);
+}
+
+
+.studio-icon-button {
+  width: 40px;
+  height: 40px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #d3d3d3;
+
+  /* Neumorphic raised effect */
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.studio-icon-button:hover {
+  transform: scale(1.05);
+}
+
+.studio-icon-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.popup-card-1 {
+  position: fixed;
+  top: 85px;
+  left: 60px;
+  width: 30%;
+  height: 76%;
+  background: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.popup-header {
+  padding: 10px 15px;
+  position: relative;
+  top: 1%;
+  width: 200%;
+  font-weight: bold;
+  font-size: 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.popup-content {
+  display: flex;
+  font-size: 11px;
+  height: 100%;
+  position: relative;
+  right: 44%;
+  width: 185%;
+  bottom: 6%;
+}
+
+.popup-tabs {
+  width: 45%;
+  background: #f0f0f0;
+  border-right: 1px solid #ccc;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4px;
+  height: 110%;
+  top: 7.6%;
+  position: relative;
+}
+
+.popup-tabs span {
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  position: relative;
+  left: 60%;
+  z-index: 1;
+  bottom: 2%;
+}
+
+.popup-tabs .active-tab {
+  background: #d3d3d3;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.popup-items {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  top: 8%;
+}
+
+.popup-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  width:50%;
+}
+
+.popup-item img {
+  width: 40px;
+  height: 40px;
+}
+
+.popup-item p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.plus-icon {
+  position: absolute;
+  right: -18px;
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+}
+

@@ -1,0 +1,159 @@
+.faq-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(180deg, #030303 0%, #140e6b 30%, #000000 100%);
+  padding: 60px 0;
+  height: 95vh;
+}
+
+.faq-slider-container {
+  overflow: hidden;
+  width: 92%;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  left: 4%;
+  right: 4%;
+  top: 10%;
+}
+
+.faq-slider {
+  display: flex;
+  gap: 30px;
+  transition: transform 1s ease-in-out;
+  will-change: transform;
+  scroll-behavior: smooth;
+  padding: 0 60px; /* uniform left-right spacing */
+  box-sizing: border-box;
+}
+/* Animated attractive text stylish professional*/
+.faq-heading {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  top: -5%;
+}
+.faq-card {
+  flex: 0 0 440px;     /* must match cardWidth JS */
+  width: 440px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: -3.5%;
+}
+
+.faq-bubble {
+  position: relative;
+  font-size: 1.2rem;
+  color: #000;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.faq-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 12%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #f2f6fb;
+}
+
+.faq-source {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+.faq-source img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 20%;
+}
+
+.faq-user {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.faq-platform {
+  font-size: 0.85rem;
+  color: #dcdcdc;
+  margin: 0;
+}
+
+.faq-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 1px 17px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.faq-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.faq-arrow.left {
+  left: 10px;
+}
+
+.faq-arrow.right {
+  right: 10px;
+}
+
+.faq-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.faq-slider {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.faq-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #999;
+  border-radius: 50%;
+  margin: 0 6px;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #fff;
+}

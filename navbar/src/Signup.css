@@ -1,0 +1,158 @@
+#signup-wrapper {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* === Left Panel (Form Section) === */
+  #signup-left {
+    width: 45%;
+    background-color: #ffffff;
+    padding: 70px 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #back-button {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #signup-title {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  #signup-form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  #signup-form input[type="text"],
+  #signup-form input[type="email"],
+  #signup-form input[type="password"] {
+    width: 100%;
+    padding: 13px 16px;
+    font-size: 15px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  #password-wrapper {
+    position: relative;
+  }
+  
+  #eye-icon {
+    position: absolute;
+    right: 16px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+  
+  #terms {
+    display: flex;
+    align-items: center;
+  }
+  
+  #terms input {
+    margin-right: 6px;
+  }
+  
+  #forgot {
+    color: #000;
+  }
+  
+  #forgot strong {
+    font-weight: 600;
+  }
+
+  #signup-text{
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+
+  #signup-text a {
+    color: #050505;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  #signin-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #signin-button:hover {
+    background-color: #222;
+  }
+  
+  /* === Right Panel (Background + Studio Title) === */
+  #signup-right {
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 40px 60px;
+    box-sizing: border-box;
+  }
+  
+  #studio-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    top: 15%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: 55%;  
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
